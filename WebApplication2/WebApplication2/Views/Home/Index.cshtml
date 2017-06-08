@@ -1,0 +1,31 @@
+﻿@using System.Activities.Expressions
+@using WebApplication2.Models
+@model List<Student>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<div>
+    <h1>HEJSA</h1>
+    <h2>Your teacher is: @ViewBag.Teacher !</h2>
+
+    <h3>Students: </h3>
+    @foreach (var st in Model)
+    {
+        <p>Student: @st.Name</p>
+        <p>Grade: @st.Grade</p>
+        <br />
+    }
+
+</div>
+</body>
+</html>

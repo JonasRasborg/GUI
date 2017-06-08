@@ -1,0 +1,56 @@
+﻿<Window x:Class="AgentAssignment.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AgentAssignment"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="823.625">
+        
+    <Window.Resources>
+        <Style x:Key="CellTextStyle">
+            <Setter Property="Control.FontSize" Value="10pt" />
+            <Setter Property="Control.FontWeight" Value="Bold" />
+        </Style>
+
+        <SolidColorBrush x:Key="myBrush" Color="Goldenrod" />
+
+        <SolidColorBrush x:Key="myBrush2" Color="BlueViolet" />
+
+    </Window.Resources>
+    <Grid x:Name="myGrid" Background="{DynamicResource myBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Label Style="{StaticResource CellTextStyle}" x:Name="labelID" Content="ID" HorizontalAlignment="Left" Margin="46,40,0,0" VerticalAlignment="Top"/>
+        <TextBox Background="{StaticResource myBrush2}" Style="{StaticResource CellTextStyle}" x:Name="textBoxID" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="31,34,0,0" TextWrapping="Wrap" Text="{Binding Path=ID}" VerticalAlignment="Top" Width="120"/>
+        <TextBlock Style="{StaticResource CellTextStyle}" x:Name="textBlockID" Grid.Column="2" HorizontalAlignment="Left" Margin="60,41,0,0" TextWrapping="Wrap" Text="{Binding Path=ID}" VerticalAlignment="Top"/>
+        <Label Style="{StaticResource CellTextStyle}" x:Name="labelCodeName" Content="Code Name" HorizontalAlignment="Left" Margin="46,32,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox Background="{StaticResource myBrush2}" Style="{StaticResource CellTextStyle}" x:Name="textBoxCodeName" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="31,36,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Path=CodeName}" VerticalAlignment="Top" Width="120"/>
+        <TextBlock Style="{StaticResource CellTextStyle}" x:Name="textBlock1CodeName" Grid.Column="2" HorizontalAlignment="Left" Margin="60,32,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Path=CodeName}" VerticalAlignment="Top"/>
+        <Label Style="{StaticResource CellTextStyle}" x:Name="labelSpeciality" Content="Speciality" HorizontalAlignment="Left" Margin="46,36,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+        <TextBox Background="{StaticResource myBrush2}" Style="{StaticResource CellTextStyle}" x:Name="textBoxSpeciality" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="31,28,0,0" Grid.Row="2" TextWrapping="Wrap" Text="{Binding Path=Speciality}" VerticalAlignment="Top" Width="120"/>
+        <TextBlock Style="{StaticResource CellTextStyle}" x:Name="textBlockSpeciality" Grid.Column="2" HorizontalAlignment="Left" Margin="60,29,0,0" Grid.Row="2" TextWrapping="Wrap" Text="{Binding Path=Speciality}" VerticalAlignment="Top"/>
+        <Label Style="{StaticResource CellTextStyle}" x:Name="labelAssignment" Content="Assigment" HorizontalAlignment="Left" Margin="46,31,0,0" Grid.Row="3" VerticalAlignment="Top"/>
+        <TextBox Background="{StaticResource myBrush2}" Style="{StaticResource CellTextStyle}" x:Name="textBoxAssigment" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="31,31,0,0" Grid.Row="3" TextWrapping="Wrap" Text="{Binding Path=Assignment}" VerticalAlignment="Top" Width="120"/>
+        <TextBlock Style="{StaticResource CellTextStyle}" x:Name="textBlockAssignment" Grid.Column="2" HorizontalAlignment="Left" Margin="60,36,0,0" Grid.Row="3" TextWrapping="Wrap" Text="{Binding Path=Assignment}" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Button" Grid.Column="2" HorizontalAlignment="Left" Margin="176,10,0,0" VerticalAlignment="Top" Width="75" Click="clickcolour"/>
+        <DataGrid Grid.ColumnSpan="2" Grid.Column="1" Margin="232,10,40,10" Grid.Row="1" Grid.RowSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Path=ID}"/>
+                <DataGridTextColumn Header="CodeName" Binding="{Binding Path=CodeName}"/>
+                <DataGridTextColumn Header="Speciality" Binding="{Binding Path=Speciality}"/>
+                <DataGridTextColumn Header="Assignemnt" Binding="{Binding Path=Assignment}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+
+</Window>
