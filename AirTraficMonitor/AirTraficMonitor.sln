@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLayer", "BusinessLogicLayer\BusinessLogicLayer.csproj", "{2D848FF9-84FA-4152-B6F2-4F30BF833BBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccesLayer", "DataAccesLayer\DataAccesLayer.csproj", "{C8966BC1-04C5-4B07-8841-A1A553B115C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{516055A9-6968-4EE0-94AB-EC20B44E234B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{29C63F42-CAB8-4A24-80D1-C1546D7D1788}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirTrafikMonitor.Test.Integration", "AirTrafikMonitor.Test.Integration\AirTrafikMonitor.Test.Integration.csproj", "{15F40104-2BD0-4DCA-BAFC-44509CBA1AB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirTraficMonitor.Test.Unit", "AirTraficMonitor.Test\AirTraficMonitor.Test.Unit.csproj", "{37B15DFD-C11A-49FC-B6A3-3DFBD1ACE085}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D848FF9-84FA-4152-B6F2-4F30BF833BBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D848FF9-84FA-4152-B6F2-4F30BF833BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D848FF9-84FA-4152-B6F2-4F30BF833BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D848FF9-84FA-4152-B6F2-4F30BF833BBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8966BC1-04C5-4B07-8841-A1A553B115C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8966BC1-04C5-4B07-8841-A1A553B115C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8966BC1-04C5-4B07-8841-A1A553B115C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8966BC1-04C5-4B07-8841-A1A553B115C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{516055A9-6968-4EE0-94AB-EC20B44E234B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{516055A9-6968-4EE0-94AB-EC20B44E234B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{516055A9-6968-4EE0-94AB-EC20B44E234B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{516055A9-6968-4EE0-94AB-EC20B44E234B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29C63F42-CAB8-4A24-80D1-C1546D7D1788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29C63F42-CAB8-4A24-80D1-C1546D7D1788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29C63F42-CAB8-4A24-80D1-C1546D7D1788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29C63F42-CAB8-4A24-80D1-C1546D7D1788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15F40104-2BD0-4DCA-BAFC-44509CBA1AB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15F40104-2BD0-4DCA-BAFC-44509CBA1AB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15F40104-2BD0-4DCA-BAFC-44509CBA1AB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15F40104-2BD0-4DCA-BAFC-44509CBA1AB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B15DFD-C11A-49FC-B6A3-3DFBD1ACE085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B15DFD-C11A-49FC-B6A3-3DFBD1ACE085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B15DFD-C11A-49FC-B6A3-3DFBD1ACE085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B15DFD-C11A-49FC-B6A3-3DFBD1ACE085}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
