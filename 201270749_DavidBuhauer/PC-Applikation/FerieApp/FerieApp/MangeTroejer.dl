@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPacketList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PacketList>
+    <Amount>3</Amount>
+    <Subject>Trøjer</Subject>
+    <Vacation>Smuk Fest 2014</Vacation>
+    <IsDone>true</IsDone>
+  </PacketList>
+  <PacketList>
+    <Amount>5</Amount>
+    <Subject>Strømper</Subject>
+    <Vacation>Smuk Fest 2014</Vacation>
+    <IsDone>false</IsDone>
+  </PacketList>
+</ArrayOfPacketList>

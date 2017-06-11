@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title> Ferie pakkeliste-webapplikation</title>
+    <link rel="stylesheet" href="Site.css"/>
+</head>
+<body onload="loadAll()">
+    <div id="header">
+        <h1> Min ferie pakkeliste!</h1>
+    </div>
+
+    <div id="content">
+        <div class="leftcolumn">
+            <div class="row">
+                <label for="vactype">Ferietype: </label>
+                <input type="text" name="vactype" id="vactype" />
+            </div>
+            <div class="row">
+                <label for="days">Dage: </label>
+                <input type="number" name="days" id="days" />
+            </div>
+            <div class="row">
+                <label for="amount">Antal: </label>
+                <input type="number" name="amount" id="amount" />
+            </div>
+            <div class="row">
+                <label for="subject">Emne: </label>
+                <input type="text" name="subject" id="subject" />
+            </div>
+            <div class="row">
+                <input id="addRow" type="submit" value="Tilføj ferie-pakkeliste" />
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <table id="fullTabel">
+                <tr>
+                    <th>Ferietype</th>
+                    <th>Dage</th>
+                    <th>Antal</th>
+                    <th>Emner</th>
+                    <th>Er pakket</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="PackageList.js"></script>
+    <script src="AddList.js"></script>
+</body>
+</html>

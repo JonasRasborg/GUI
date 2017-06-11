@@ -1,0 +1,35 @@
+﻿<Window x:Class="FerieApp.DrawPackageList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tegn manuelt!" Height="500" Width="500"
+        WindowStartupLocation="CenterOwner"
+        ShowInTaskbar="True" ResizeMode="CanResize" WindowStyle="ToolWindow"
+        KeyDown="keyDownEventHandler"
+        MouseDown="mouseDownEventHandler"
+        MouseMove="mouseMoveEventHandler"
+        MouseUp ="mouseUpEventHandler">
+    <Window.Resources>
+        <SolidColorBrush x:Key="myBrush"/>
+    </Window.Resources>
+    <Grid Name="mainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="254*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <ToolBarPanel Grid.Row="0" Background="LightGray">
+            <ToolBar HorizontalAlignment="Left" Width="141" Height="47" FontSize="22">
+                <Label Content="Farve"/>
+                <TextBox Margin="0,2" Width="36" Background="{DynamicResource myBrush}"/>
+            </ToolBar>
+        </ToolBarPanel>
+        <Canvas x:Name="mainCanvas" Grid.Row="1">
+        </Canvas>
+        <StatusBar Grid.Row="2">
+            <StatusBarItem Content="Mus position X:"/>
+            <TextBox Name="stXCoordMouse" Width="50"/>
+            <StatusBarItem Content="Y: "/>
+            <TextBox Name="stYCoordMouse" Width="50"/>
+        </StatusBar>
+    </Grid>
+</Window>

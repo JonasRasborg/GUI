@@ -1,0 +1,44 @@
+﻿<Window x:Class="FerieApp.PacketListWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:FerieApp"
+        Title="PacketListWindow" Height="173" Width="300"
+        WindowStartupLocation="CenterOwner"
+        FocusManager.FocusedElement="{Binding ElementName=tbxAmount}"
+        ShowInTaskbar="False" ResizeMode="NoResize" WindowStyle="ToolWindow" >
+    
+    <Window.Resources>
+        <local:Subjects x:Key="subjects"/>
+
+        <Style TargetType="{x:Type Label}">
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="Width" Value="92" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Label Margin="0,8,0,0">Amount</Label>
+        <Label Margin="0,49,0,0">Subject</Label>
+        <TextBox Height="25" Margin="92,8,0,0" Name="tbxAmount" TabIndex="0"
+                 VerticalAlignment="Top" HorizontalAlignment="Left" Width="31" MaxLength="3" 
+                 Text="{Binding Amount}"/>
+        <ComboBox Height="23" Margin="92,52,14,0" Name="cbxSubjects" VerticalAlignment="Top"
+                  TabIndex="1"
+                  ItemsSource="{Binding Source={StaticResource subjects}}" 
+                  SelectedItem="{Binding Subject}"/>
+        <Button IsDefault="True" 
+                TabIndex="2"
+                Margin="92,0,111,12" 
+                Name="btnOk" 
+                VerticalAlignment="Bottom" 
+                Click="btnOk_Click">_Ok</Button>
+        <Button IsCancel="True" 
+                TabIndex="3"
+                Margin="0,0,14,12" 
+                Name="btnCancel" 
+                HorizontalAlignment="Right" 
+                Width="75" 
+                VerticalAlignment="Bottom">_Cancel</Button>
+    </Grid>
+</Window>

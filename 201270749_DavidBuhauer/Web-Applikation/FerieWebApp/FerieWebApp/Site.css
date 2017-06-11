@@ -1,0 +1,86 @@
+﻿body {
+    border: 3px solid #5F021F;
+    width: 1000px;
+	margin: auto;
+    margin-bottom: 0.01em;
+    min-height: 650px;
+    background-color: #b0e0e6;
+    font-family: Verdana;
+}
+
+#header {
+    /*margin: 25px 50px 75px 100px;
+    top margin is 25px
+    right margin is 50px
+    bottom margin is 75px
+    left margin is 100px
+        */
+    margin: 50px 25px 25px 50px;
+    border-bottom: 1px solid black;
+
+}
+
+#content {
+    height: auto;
+    width: auto;
+}
+
+.leftcolumn {
+    background-color: #ffffcc;
+    float: left;
+    margin-left: 50px;
+    padding: 5px;
+    height: auto;
+    width: auto;
+    color: #000000;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.rightcolumn {
+    margin-left: 450px;
+    background-color: white;
+    color: #000000;
+    width: 525px;
+    height: auto;
+    -moz-min-width: 500px;
+    -ms-min-width: 500px;
+    -o-min-width: 500px;
+    -webkit-min-width: 500px;
+    min-width: 500px;
+}
+
+label {
+    float: left;
+    width: 100px;
+
+    text-align: left;
+    padding-right: 10px;
+
+}
+
+.row {
+    display: block;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,td,th {
+    text-align: center;
+    padding: 13px;
+}
+
+#addRow {
+    font-family: Verdana;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.debug {
+    border: 1px solid black;
+}

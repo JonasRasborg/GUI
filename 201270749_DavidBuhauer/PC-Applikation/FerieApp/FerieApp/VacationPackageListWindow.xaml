@@ -1,0 +1,42 @@
+﻿<Window x:Class="FerieApp.VacationPackageListWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="VacationPackageListWindow" Height="200" Width="300"
+        WindowStartupLocation="CenterOwner"
+        FocusManager.FocusedElement="{Binding ElementName=tbxVacName}"
+        ShowInTaskbar="False" ResizeMode="NoResize" WindowStyle="ToolWindow" >
+    <Window.Resources>
+        <Style TargetType="{x:Type Label}">
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="Width" Value="92" />
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <Label Margin="0,8,0,0" Width="116">Vacation Name</Label>
+        <TextBox Height="25" Margin="121,8,14,0" Name="tbxVacName" TabIndex="0"
+                 VerticalAlignment="Top"
+                 Text="{Binding Vacation}"/>
+        <Label Margin="0,40,0,0">Days</Label>
+        <TextBox Height="25" Margin="121,38,135,0" Name="tbxDays" TabIndex="1"
+        	VerticalAlignment="Top"
+        	/>
+        <Button IsDefault="True" 
+                TabIndex="2"
+                Margin="92,0,111,12" 
+                Name="btnOk" 
+                VerticalAlignment="Bottom" 
+                Click="btnOk_Click">_Ok
+        </Button>
+        <Button IsCancel="True" 
+                TabIndex="3"
+                Margin="0,0,14,12" 
+                Name="btnCancel" 
+                HorizontalAlignment="Right" 
+                Width="75" 
+                VerticalAlignment="Bottom">_Cancel
+        </Button>
+    </Grid>
+</Window>
