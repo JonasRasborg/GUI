@@ -1,0 +1,47 @@
+﻿
+
+
+
+h1 
+{
+    font-size: 60px;
+    font-style: italic;
+    text-align:center;
+    margin-top: 50px;
+}
+
+#main {
+    font-size: 20px;
+    width: 600px;
+}
+
+.center {
+    margin: auto;
+    width: 600px;
+    border: 3px solid black;
+    padding: 10px;
+    height: 350px;
+}
+
+input 
+{
+    font-size: 20px;
+}
+
+
+#left 
+{
+
+    float: left;
+}
+
+#right {
+    float: right;
+}
+
+#total {
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+}
