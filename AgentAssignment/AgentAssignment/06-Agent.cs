@@ -14,7 +14,8 @@ namespace I4GUI
 
       public Agent()
       {
-      }
+
+        }
 
       public Agent(string aId, string aName, string aAddress, string aSpeciality, string aAssignment)
       {

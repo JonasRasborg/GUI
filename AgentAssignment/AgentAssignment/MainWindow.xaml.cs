@@ -67,9 +67,8 @@ namespace AgentAssignment
                 Agent newAgent = addWindow.newAgent;
                 aListe.Add(newAgent);
             }
-
-
         }
+
 
         private void ComboSortChanged(object sender, SelectionChangedEventArgs e)
         {
